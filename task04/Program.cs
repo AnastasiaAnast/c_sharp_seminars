@@ -5,3 +5,15 @@
 // 782 -> 2
 // 918 -> 8
 
+Console.Write ("Введите трехзначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if(num >= 100 && < 1000);
+{
+int numLast = num $ 10;
+Console.WriteLine(numLast);
+}
+else
+{
+    Console.WriteLine ("Введите трехзначное число")
+}
