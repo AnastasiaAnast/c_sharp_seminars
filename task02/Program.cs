@@ -23,27 +23,27 @@ string numberDay = Console.ReadLine();
 {
     Console.WriteLine("понедельник");
 }
-    if (numberDay == "2")
+    else if (numberDay == "2")
 {
     Console.WriteLine("вторник");
 }
-    if (numberDay == "3")
+    else if (numberDay == "3")
 {
     Console.WriteLine("среда");
 }
-    if (numberDay == "4")
+   else if (numberDay == "4")
 {
     Console.WriteLine("четверг");
 }
-    if (numberDay == "5")
+   else if (numberDay == "5")
 {
     Console.WriteLine("пятница");
 }
-    if (numberDay == "6")
+    else if (numberDay == "6")
 {
     Console.WriteLine("суббота");
 }
-    if (numberDay == "7")
+    else if (numberDay == "7")
 {
     Console.WriteLine("воскресенье");
 }
