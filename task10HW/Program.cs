@@ -12,9 +12,14 @@ int SecondDigitOfAThreeDigitNumber(int num)
 }
 
 int num = Convert.ToInt32(Console.ReadLine());
-if (num >= 100 && num <= 999) 
+if (num >= 100 && num <= 999)
 {
     int solution = SecondDigitOfAThreeDigitNumber(num);
+    Console.WriteLine($"Вторая цифра введенного числа {num} - {solution}");
+}
+else if (num <= -100 && num >= -999)
+{
+    int solution = SecondDigitOfAThreeDigitNumber(num) * -1;
     Console.WriteLine($"Вторая цифра введенного числа {num} - {solution}");
 }
 else
