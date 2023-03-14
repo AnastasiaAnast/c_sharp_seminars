@@ -4,10 +4,10 @@
 // выдаёт номер четверти плоскости, в которой находится эта точка.
 
 Console.WriteLine("Введите координаты точки");
-Console.Write("X:");
+Console.Write("X: ");
 int xCoordinate = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Y:");
+Console.Write("Y: ");
 int yCoordinate = Convert.ToInt32(Console.ReadLine());
 
 int quarter = Quarter(xCoordinate, yCoordinate);
