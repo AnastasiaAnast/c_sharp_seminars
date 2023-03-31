@@ -9,18 +9,24 @@
 Console.WriteLine ("Введите число, чтобы увидеть третью цифру из данного числа (или ее отсутствие)");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number <= 99 && number >= -99)
-{
-    Console.WriteLine("Третья цифра из данного числа не существует");
-}
-
 int ThirdNumber(int num)
 {
-    while (number <= -100 || number >= 100)
-{ // новая переменная threeDigitNum - трехзначное число
-    number / 10; //пока не станет трехзначным
-}
-return number % 10;
+    int result = -1;
+    if (num >= 100)
+    {
+        while(num > 999)
+        {
+            num = num / 10;
+        }
+        result = num % 10;
+    }
+    return result;
 }
 
-Console.WriteLine($"Третья цифра из данного числа - {number}");
+if(number < 0) number = -number;
+if(ThirdNumber(number) == -1)
+Console.WriteLine("Третьей цифры у данного числа нет");
+else
+{
+Console.WriteLine($"Третья цифра у данного числа = {ThirdNumber(number)} ");
+}
